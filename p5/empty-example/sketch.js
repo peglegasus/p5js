@@ -1,4 +1,5 @@
 let x = 0;
+let y = 0;
 
 function setup() {
   createCanvas(1024,768)
@@ -7,6 +8,7 @@ function setup() {
 }
 
 function draw() {
-  ellipse(x, height/2, 20, 20);
-   x = x + 1;
+  ellipse(x, height/2+y, 20, 20);
+   x+=1;
+   y+=1;
 }
