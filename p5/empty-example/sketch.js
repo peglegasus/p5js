@@ -8,28 +8,31 @@ function setup() {
 }
 
 function draw() {
-  let x1 = Math.floor(Math.random() * 1024);
-  let y1 = Math.floor(Math.random() * 768);
-  let x2 = Math.floor(Math.random() * 1024);
-  let y2 = Math.floor(Math.random() * 768);
 
-  //stroke(getRandomHexColor());
-  let r = Math.floor(Math.random() * 255)
-  let g = Math.floor(Math.random() * 255)
-  let b = Math.floor(Math.random() * 255);
+  for (var i = 0; i < 100; i++) {
+    let x1 = Math.floor(Math.random() * 1024);
+    let y1 = Math.floor(Math.random() * 768);
+    let x2 = Math.floor(Math.random() * 1024);
+    let y2 = Math.floor(Math.random() * 768);
 
-  //r = r - (255-b) > 0 ? r - (255-b) : r;
-  g = g - (255-b) > 0 ? g - (255-b) : g;
-  b = b - (255-b) > 0 ? b - (255-b) : b;
+    //stroke(getRandomHexColor());
+    let r = Math.floor(Math.random() * 255)
+    let g = Math.floor(Math.random() * 255)
+    let b = Math.floor(Math.random() * 255);
+
+    //r = r - (255-b) > 0 ? r - (255-b) : r;
+    g = g - (255-b) > 0 ? g - (255-b) : g;
+    b = b - (255-b) > 0 ? b - (255-b) : b;
 
 
-  let a = Math.random();
+    let a = Math.random();
 
-  let sRgba = 'rgba('+ r +','+ g +','+ b +',.3)'
-  stroke(sRgba);
+    let sRgba = 'rgba('+ r +','+ g +','+ b +',.3)'
+    stroke(sRgba);
 
-  line(x1,y1,x2,y2);
+    line(x1,y1,x2,y2);
 
+  }
 }
 
 function getRandomHexColor() {
