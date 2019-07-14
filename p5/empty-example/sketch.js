@@ -18,8 +18,9 @@ function draw() {
   let g = Math.floor(Math.random() * 255)
   let b = Math.floor(Math.random() * 255);
 
-  r = r - (255-b) > 0 ? r - (255-b) : r;
+  //r = r - (255-b) > 0 ? r - (255-b) : r;
   g = g - (255-b) > 0 ? g - (255-b) : g;
+  b = b - (255-b) > 0 ? b - (255-b) : b;
 
 
   let a = Math.random();
