@@ -14,9 +14,13 @@ function draw() {
   let y2 = Math.floor(Math.random() * 768);
 
   //stroke(getRandomHexColor());
+  let r = Math.floor(Math.random() * 255)
+  let g = Math.floor(Math.random() * 255)
   let b = Math.floor(Math.random() * 255);
-  let r = Math.floor(Math.random() * 255);
-  let g = Math.floor(Math.random() * 255);
+
+  r = r - (255-b) > 0 ? r - (255-b) : r;
+  g = g - (255-b) > 0 ? g - (255-b) : g;
+
 
   let a = Math.random();
 
