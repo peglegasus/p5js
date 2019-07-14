@@ -8,7 +8,11 @@ function setup() {
 }
 
 function draw() {
-  ellipse(x, height/2+y, 20, 20);
-   x+=1;
-   y+=1;
+  x1 = Math.floor(Math.random() * 1024);
+  y1 = Math.floor(Math.random() * 768);
+  x2 = Math.floor(Math.random() * 1024);
+  y2 = Math.floor(Math.random() * 768);
+
+   line(x1,y1,x2,y2);
+   
 }
